@@ -57,8 +57,8 @@ import javax.inject.Inject
 
 private const val TAG = "MainActivity"
 
-@AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+@AndroidEntryPoint(ComponentActivity::class)
+class MainActivity : Hilt_MainActivity() {
 
     /**
      * Lazily inject [JankStats], which is used to track jank throughout the app.
