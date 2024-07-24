@@ -31,7 +31,7 @@ class HiltConventionPlugin : Plugin<Project> {
 
             /** Add support for Android modules, based on [AndroidBasePlugin] */
             pluginManager.withPlugin("com.android.base") {
-                pluginManager.apply("dagger.hilt.android.plugin")
+//                pluginManager.apply("dagger.hilt.android.plugin")
                 dependencies {
                     add("implementation", libs.findLibrary("hilt.android").get())
                 }

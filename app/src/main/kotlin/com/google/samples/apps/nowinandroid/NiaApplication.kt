@@ -27,8 +27,8 @@ import javax.inject.Inject
 /**
  * [Application] class for NiA
  */
-@HiltAndroidApp
-class NiaApplication : Application(), ImageLoaderFactory {
+@HiltAndroidApp(Application::class)
+class NiaApplication : Hilt_NiaApplication(), ImageLoaderFactory {
     @Inject
     lateinit var imageLoader: dagger.Lazy<ImageLoader>
 
