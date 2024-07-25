@@ -31,7 +31,7 @@ dependencies {
 
     implementation(libs.androidx.tracing.ktx)
     implementation(libs.androidx.work.ktx)
-    implementation(libs.hilt.ext.work)
+    api(libs.hilt.ext.work)
     implementation(projects.core.analytics)
     implementation(projects.core.data)
     implementation(projects.core.notifications)
